@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+
+    <label for="input-field">Article body:</label><br>
+    <textarea id="input-field" name="article-body" rows="3" cols="60"></textarea>
+    <span id="feedback-field" style="font-size:12px; color:#999; display:block">0/360 Characters</span>
+
+    <!--Including required script files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="writeLimit.js"></script>
+
+    <!--Let's hook our plugin with the textarea field and feedback field-->
+    <script>
+        $("#input-field").writeLimit("#feedback-field", 360, "Characters");
+        //It's this simple!
+    </script>
+</body>
+</html>
