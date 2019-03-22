@@ -6,7 +6,7 @@ This is a simple text input limit jQuery plugin.
 Firstly, include `writeLimit.js` after including `jQuery`.
 Now you're ready to use it!
 
- - Hook the plugin to a text file
+ - Hook the plugin to an input field / textarea
     ```js
     $("#input-field").writeLimit();
     ```
